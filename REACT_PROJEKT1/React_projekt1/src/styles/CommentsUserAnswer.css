@@ -1,0 +1,13 @@
+p{
+    padding: 20px;
+    font-size: 25px;
+}
+.commentsUserAnswer-good{
+    background-color: #029a35;
+}
+.commentsUserAnswer-wrong{
+    background-color: #e72005;
+}
+.commentsUserAnswer-without{
+    background-color: #00a1ff;
+}

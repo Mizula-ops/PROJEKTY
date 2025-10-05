@@ -1,0 +1,23 @@
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+ 
+  font-weight: 400;
+  width: 100%;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #2d3046;
+
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  width: 100%
+}
+
+
+
+

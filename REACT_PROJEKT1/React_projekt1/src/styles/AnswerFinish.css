@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  position: relative;
+  margin-bottom: 12px;
+  font-size: 22px;
+
+}
+.AnswerFinish-answer{
+   background-color: #1d1f2e;
+   opacity: 40%;
+   width:100%;
+}
+.AnswerFinish-wrong{
+   background-color: #e72005;
+   width:100%;
+}
+.AnswerFinish-good{
+   background-color: #029a35;
+   width:100%;
+}
+.text {
+  text-align: left;
+  margin-left: 10px;
+  transform: translateY(-2px); 
+  padding:10px;
+}
+
+
+

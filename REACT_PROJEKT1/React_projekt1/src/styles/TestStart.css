@@ -1,0 +1,39 @@
+.TestStart-container{
+    max-width:1000px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    
+} 
+.TestStart-h1{
+    font-size: 60px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+.TestStart-main{
+    
+    margin-top: 20px;
+     margin-bottom: 30px;
+   
+}
+.TestStart-stars{
+    margin-top:30px;
+}
+.TestStart-button{
+    background-color: #382f4a;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+   
+    border-radius: 6px;
+}
+.TestStart-button:hover{
+    background-color: #212336;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+    color: #fff973;
+    border-radius: 6px;
+}

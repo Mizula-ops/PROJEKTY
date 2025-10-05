@@ -1,0 +1,47 @@
+.TestEnd-container{
+    max-width:1000px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    
+} 
+.TestEnd-h1{
+    font-size: 60px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+.TestEnd-p{
+    
+    font-size: 34px;
+    font-weight: 700;
+    box-Shadow:0 0 10px rgba(7, 161, 30, 0.7);
+    border-Radius: 4px;
+    padding: 7px;
+}
+.TestEnd-main{
+    
+    margin-top: 20px;
+     margin-bottom: 30px;
+   
+}
+.TestEnd-stars{
+    margin-top:30px;
+}
+.TestEnd-button{
+    background-color: #382f4a;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+   
+    border-radius: 6px;
+}
+.TestEnd-button:hover{
+    background-color: #212336;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+    color: #fff973;
+    border-radius: 6px;
+}
