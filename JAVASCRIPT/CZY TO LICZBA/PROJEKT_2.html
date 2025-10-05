@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>JAKA LICZBA</title>
+    <script type="text/javascript">
+
+        function sprawdz()
+        {
+          var liczba = document.getElementById("pole").value;
+          if(liczba>0) document.getElementById("wynik").innerHTML="liczba jest dodatnia";
+          else if(liczba<0) document.getElementById("wynik").innerHTML="liczba jest ujemna"; 
+          else if(liczba=="0") document.getElementById("wynik").innerHTML="liczba jest rowna zero";
+          else if(liczba==0) document.getElementById("wynik").innerHTML="Nie zostala wprowadzona wartosc";
+          else document.getElementById("wynik").innerHTML="To nie liczba";
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" id="pole"/>
+    <input type="submit" value="Sprawdź" onclick="sprawdz()"/>
+    <div id="wynik"></div>
+</body>
+
+</html>
