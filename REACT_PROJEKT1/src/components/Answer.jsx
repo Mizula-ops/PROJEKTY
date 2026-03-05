@@ -1,4 +1,4 @@
-import "../styles/answer.css"
+import "../styles/Answer.css"
 export const Answer= ({answer,userAnswer,setUserAnswer,index,index_question, isMultipleChoice}) =>{
     
     return(
