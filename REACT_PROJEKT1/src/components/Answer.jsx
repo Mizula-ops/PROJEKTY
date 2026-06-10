@@ -1,37 +1,50 @@
-import "../styles/Answer.css"
-export const Answer= ({answer,userAnswer,setUserAnswer,index,index_question, isMultipleChoice}) =>{
-    
-    return(
-        <>
-        <label className="Answer-label container">
-    <input
-        type={isMultipleChoice ? "checkbox":"radio"}
+import "../styles/Answer.css";
+
+export const Answer = ({
+  answer,
+  userAnswer,
+  setUserAnswer,
+  index,
+  index_question,
+  isMultipleChoice
+}) => {
+  return (
+    <label className="Answer-label container">
+      <input
+        type={isMultipleChoice ? "checkbox" : "radio"}
         name={`answer-${index_question}`}
         onChange={(e) => {
-            const checked=e.target.checked
-            const updated = [...userAnswer];
-            if(isMultipleChoice){
-                if(checked)
-                {
-                    updated[index_question].push(index);
-                   
-                }
-            
-                else {
-                    const idx=updated[index_question].indexOf(index);
-                    updated.splice(idx,1);
-                   
-                }
+          const checked = e.target.checked;
+          const updated = [...userAnswer];
+
+          if (isMultipleChoice) {
+            const currentAnswers = Array.isArray(updated[index_question])
+              ? [...updated[index_question]]
+              : [];
+
+            if (checked) {
+              currentAnswers.push(index);
+            } else {
+              updated[index_question] = currentAnswers.filter(
+                (item) => item !== index
+              );
+              setUserAnswer(updated);
+              return;
             }
-            else
-                updated[index_question]=index;
-            setUserAnswer(updated);
-        
+
+            updated[index_question] = currentAnswers;
+          } else {
+            updated[index_question] = index;
+          }
+
+          setUserAnswer(updated);
         }}
-    />
-    <span className="checkmark"></span> 
-    <div className="answer-text">{index}: {answer}</div> {/* może być po wszystkim */}
-</label>
-        </>
-    )
-}
+      />
+
+      <span className="checkmark"></span>
+      <div className="answer-text">
+        {index}: {answer}
+      </div>
+    </label>
+  );
+};
